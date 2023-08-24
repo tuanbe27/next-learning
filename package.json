@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "start": "next start",
+    "start": "npx serve out",
     "build": "next build"
   },
   "dependencies": {
