@@ -24,7 +24,10 @@ export default function RootLayout({ children }: LayoutProps) {
           <NavBar />
         </header>
 
-        <main className="grow py-3">{children}</main>
+        <main className="grow py-3">
+          {children}
+          <div>{" "} Deploy on Vercel</div>
+        </main>
 
         <footer className="border-t py-3 text-center text-slate-500 text-xs border-gray-300">
           Game data and images from
