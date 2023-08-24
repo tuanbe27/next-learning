@@ -24,10 +24,7 @@ export default function RootLayout({ children }: LayoutProps) {
           <NavBar />
         </header>
 
-        <main className="grow py-3">
-          {children}
-          <div>{" "} Deploy on Vercel</div>
-        </main>
+        <main className="grow py-3">{children}</main>
 
         <footer className="border-t py-3 text-center text-slate-500 text-xs border-gray-300">
           Game data and images from
@@ -36,7 +33,14 @@ export default function RootLayout({ children }: LayoutProps) {
             target="_blank"
             className="font-bold ml-1"
           >
-            RAWG
+            RAWG | Deploy on{" "}
+            <CustomLink
+              href="https://vercel.com/"
+              target="_blank"
+              className="font-bold ml-1"
+            >
+              Vercel
+            </CustomLink>
           </CustomLink>
         </footer>
       </body>
