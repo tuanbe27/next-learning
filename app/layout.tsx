@@ -33,14 +33,15 @@ export default function RootLayout({ children }: LayoutProps) {
             target="_blank"
             className="font-bold ml-1"
           >
-            RAWG | Deploy on{" "}
-            <CustomLink
-              href="https://vercel.com/"
-              target="_blank"
-              className="font-bold ml-1"
-            >
-              Vercel
-            </CustomLink>
+            RAWG
+          </CustomLink>{" "}
+          | Deploy on{" "}
+          <CustomLink
+            href="https://vercel.com/"
+            target="_blank"
+            className="font-bold ml-1"
+          >
+            Vercel
           </CustomLink>
         </footer>
       </body>
